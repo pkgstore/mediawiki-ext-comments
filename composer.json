@@ -1,0 +1,46 @@
+{
+  "name": "pkgstore/mediawiki-ext-comments",
+  "type": "mediawiki-extension",
+  "description": "MediaWiki comments extension.",
+  "license": "MIT",
+  "homepage": "https://ihub.to/",
+  "keywords": [
+    "mediawiki",
+    "comments"
+  ],
+  "authors": [
+    {
+      "name": "iHub TO",
+      "email": "mail@ihub.to",
+      "homepage": "https://ihub.to/",
+      "role": "Developer"
+    },
+    {
+      "name": "Kitsune Solar",
+      "email": "mail@kitsune.solar",
+      "homepage": "https://kitsune.solar/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pkgstore/mediawiki-ext-comments/issues",
+    "source": "https://github.com/pkgstore/mediawiki-ext-comments"
+  },
+  "require": {
+    "composer/installers": "^1.0.1",
+    "php": ">=8.2",
+    "pkgstore/mediawiki-ext-kernel": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "MW_EXT_Comments.class.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "extra": {
+    "installer-name": "MW_EXT_Comments"
+  }
+}
